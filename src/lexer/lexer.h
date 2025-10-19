@@ -11,7 +11,7 @@ namespace lexer {
 class Lexer {
 public:
     explicit Lexer(const std::string& source);
-    
+
     Token next_token();
     void reset();
 
@@ -38,7 +38,7 @@ private:
     Token parse_string();
     Token parse_char_literal();
     Token parse_operator();
-    
+
     void init_keywords();
 };
 
